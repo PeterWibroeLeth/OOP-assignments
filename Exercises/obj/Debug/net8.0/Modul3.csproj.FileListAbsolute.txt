@@ -1,0 +1,15 @@
+/Users/peterleth/Desktop/1. SEMESTER/Objektorienteret Programmering/OOP/Modul3/obj/Debug/net8.0/Modul3.GeneratedMSBuildEditorConfig.editorconfig
+/Users/peterleth/Desktop/1. SEMESTER/Objektorienteret Programmering/OOP/Modul3/obj/Debug/net8.0/Modul3.AssemblyInfoInputs.cache
+/Users/peterleth/Desktop/1. SEMESTER/Objektorienteret Programmering/OOP/Modul3/obj/Debug/net8.0/Modul3.AssemblyInfo.cs
+/Users/peterleth/Desktop/1. SEMESTER/Objektorienteret Programmering/OOP/Modul3/obj/Debug/net8.0/Modul3.csproj.CoreCompileInputs.cache
+/Users/peterleth/Desktop/1. SEMESTER/Objektorienteret Programmering/OOP/Modul3/obj/Debug/net8.0/Modul3.sourcelink.json
+/Users/peterleth/Desktop/1. SEMESTER/Objektorienteret Programmering/OOP/Modul3/bin/Debug/net8.0/Modul3
+/Users/peterleth/Desktop/1. SEMESTER/Objektorienteret Programmering/OOP/Modul3/bin/Debug/net8.0/Modul3.deps.json
+/Users/peterleth/Desktop/1. SEMESTER/Objektorienteret Programmering/OOP/Modul3/bin/Debug/net8.0/Modul3.runtimeconfig.json
+/Users/peterleth/Desktop/1. SEMESTER/Objektorienteret Programmering/OOP/Modul3/bin/Debug/net8.0/Modul3.dll
+/Users/peterleth/Desktop/1. SEMESTER/Objektorienteret Programmering/OOP/Modul3/bin/Debug/net8.0/Modul3.pdb
+/Users/peterleth/Desktop/1. SEMESTER/Objektorienteret Programmering/OOP/Modul3/obj/Debug/net8.0/Modul3.dll
+/Users/peterleth/Desktop/1. SEMESTER/Objektorienteret Programmering/OOP/Modul3/obj/Debug/net8.0/refint/Modul3.dll
+/Users/peterleth/Desktop/1. SEMESTER/Objektorienteret Programmering/OOP/Modul3/obj/Debug/net8.0/Modul3.pdb
+/Users/peterleth/Desktop/1. SEMESTER/Objektorienteret Programmering/OOP/Modul3/obj/Debug/net8.0/Modul3.genruntimeconfig.cache
+/Users/peterleth/Desktop/1. SEMESTER/Objektorienteret Programmering/OOP/Modul3/obj/Debug/net8.0/ref/Modul3.dll
