@@ -3,8 +3,14 @@ using System;
 class Program{
 	public static void Main(string[] args){
 		Assignments a = new Assignments();
+		// This makes an new Object with the parameter being the Name we will handle in our Class Customer
 
+		CustomerDatabase database = new CustomerDatabase();
 
+		// Adding new Customer objects to the database
+		database.AddCustomer(new Customer("Alice", 101, 500.0)); // Alice is a Customer object
+		database.AddCustomer(new Customer("Bob", 102, 300.0));   // Bob is a Customer object
+		database.GetCustomerBalanceById(102);
 	}
 }
 
@@ -77,7 +83,7 @@ class Assignments  {
 	//------------------------------------------------------------------------------------------------
 
 
-		public void dateDiff(){
+	public void dateDiff(){
 		/* 
 		Skriv et program, der givet 7 dagstemperaturer udregner og udskriver temper-aturdifferencen 
 		mellem alle to på hinanden følgende dage 
@@ -234,13 +240,139 @@ class Assignments  {
         }
 
         return Math.Round(currentValue, 7); // Rund resultatet til 7 decimaler
-    }
-
+    } 
 
 }
-	
 
+class Customer {
+	// Attributes - These are fields that store data for the object. We declare them here, and they will be used throughout the class and can be modified.
+	// These fields are accessible from the main method whenever we create an instance of this class (i.e., a Customer object).
+	public string Name;
+	public int Id;
+	public double Balance;
 
+	// Constructor - This method is called automatically when we create a new Customer object. It takes name and id as parameters, which must be passed
+	// when creating the object. The constructor initializes the Name and Id, and it sets the Balance to 0.0, assuming this is a new customer.
+	public Customer(string name, int id)
+	{
+		Name = name;
+		Id = id;
+		Balance = 0.0;
+	}
+
+	// Constructor - This second constructor allows us to create a Customer object with an initial balance.
+	// It takes name, id, and balance as parameters. This is useful if the customer has a pre-existing balance or makes an initial deposit.
+	public Customer(string name, int id, double balance)
+	{
+		Name = name;
+		Id = id;
+		Balance = balance;
+	}
+	/*
+	Why are we making two separate constructors?
+	We are creating two constructors because we want to handle two different scenarios:
+	1. The first constructor handles the case where we have a completely new customer. In this case, we assume the starting balance is 0.
+	2. The second constructor handles the case where we want to register a customer with an existing balance or they make an initial deposit along with their registration.
+	*/
+
+	// Method - This method is used to handle deposits. The parameter 'amount' represents how much money the customer wants to deposit.
+	// When we call aCustomer.Deposit(amount), the specified amount is added to the balance.
+	// If we provide a negative value for 'amount', it could also subtract from the balance, meaning this method could technically handle both deposits and withdrawals.
+	public void Deposit(double amount)
+	{
+		Balance += amount; // Adds the specified amount (positive or negative) to the balance.
+	}
+
+	// Method - This method is specifically for handling withdrawals. It includes a conditional statement to check whether the customer has enough
+	// money in their balance to make the withdrawal. If the balance is sufficient, the amount is subtracted; otherwise, an error message is shown.
+	public void Withdraw(double amount)
+	{
+		if (Balance >= amount)
+		{
+			Balance -= amount; // Subtracts the desired amount from the account 
+		}
+		else
+		{
+			Console.WriteLine("Ikke nok penge på kontoen til at foretage hævning.");
+		}
+	}
+
+	// Method - This method returns the customer's current balance. We can call it whenever we want to check the balance.
+	public double GetBalance()
+	{
+		return Balance;
+	}
+}
+
+class CustomerDatabase{
+public Customer[] customers;
+
+    // Constructor that initializes the 'customers' array with 10 empty slots
+    public CustomerDatabase()
+    {
+        customers = new Customer[10]; // Array with 10 slots
+    }
+
+    // Adds a customer to the first empty slot
+    public void AddCustomer(Customer customer)
+    {
+        for (int i = 0; i < customers.Length; i++)
+        {
+            if (customers[i] == null)
+            {
+                customers[i] = customer;
+                return;
+            }
+        }
+        Console.WriteLine("No empty slots available to add a new customer.");
+    }
+
+    // Removes a customer by ID
+    public void RemoveCustomerById(int id)
+    {
+        for (int i = 0; i < customers.Length; i++)
+        {
+            if (customers[i] != null && customers[i].Id == id)
+            {
+                customers[i] = null; // Remove the customer by setting the slot to null
+                return;
+            }
+        }
+        Console.WriteLine($"Customer with ID {id} not found.");
+    }
+
+    // Returns the entire customers array
+    public Customer[] GetAllCustomers()
+    {
+        return customers;
+    }
+
+    // Prints the names of all customers
+    public void PrintAllCustomerNames()
+    {
+        for (int i = 0; i < customers.Length; i++)
+        {
+            if (customers[i] != null)
+            {
+                Console.WriteLine(customers[i].Name);
+            }
+        }
+    }
+
+	public double GetCustomerBalanceById(int id)
+	{
+		for (int i = 0; i < customers.Length; i++)
+		{
+			if (customers[i] != null && customers[i].Id == id)
+			{
+				Console.WriteLine(customers[i].Balance);
+				return customers[i].Balance; // Return customer balance
+			}
+		}
+		Console.WriteLine($"Customer with ID {id} not found.");
+		return -1; // Return -1 to indicate the customer was not found
+	}
+}
 
 
 

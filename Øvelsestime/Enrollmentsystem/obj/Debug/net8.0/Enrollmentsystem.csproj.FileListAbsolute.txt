@@ -1,0 +1,5 @@
+/Users/peterleth/Desktop/1semester/oop/OOP/Øvelsestime/Enrollmentsystem/obj/Debug/net8.0/Enrollmentsystem.GeneratedMSBuildEditorConfig.editorconfig
+/Users/peterleth/Desktop/1semester/oop/OOP/Øvelsestime/Enrollmentsystem/obj/Debug/net8.0/Enrollmentsystem.AssemblyInfoInputs.cache
+/Users/peterleth/Desktop/1semester/oop/OOP/Øvelsestime/Enrollmentsystem/obj/Debug/net8.0/Enrollmentsystem.AssemblyInfo.cs
+/Users/peterleth/Desktop/1semester/oop/OOP/Øvelsestime/Enrollmentsystem/obj/Debug/net8.0/Enrollmentsystem.csproj.CoreCompileInputs.cache
+/Users/peterleth/Desktop/1semester/oop/OOP/Øvelsestime/Enrollmentsystem/obj/Debug/net8.0/Enrollmentsystem.sourcelink.json

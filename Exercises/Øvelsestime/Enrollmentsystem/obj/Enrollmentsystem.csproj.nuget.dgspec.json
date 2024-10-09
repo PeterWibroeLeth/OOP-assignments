@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/peterleth/Desktop/1semester/oop/OOP-assignments/Exercises/Modul3.csproj": {}
+    "/Users/peterleth/Desktop/1semester/oop/OOP/Øvelsestime/Enrollmentsystem/Enrollmentsystem.csproj": {}
   },
   "projects": {
-    "/Users/peterleth/Desktop/1semester/oop/OOP-assignments/Exercises/Modul3.csproj": {
+    "/Users/peterleth/Desktop/1semester/oop/OOP/Øvelsestime/Enrollmentsystem/Enrollmentsystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/peterleth/Desktop/1semester/oop/OOP-assignments/Exercises/Modul3.csproj",
-        "projectName": "Modul3",
-        "projectPath": "/Users/peterleth/Desktop/1semester/oop/OOP-assignments/Exercises/Modul3.csproj",
+        "projectUniqueName": "/Users/peterleth/Desktop/1semester/oop/OOP/Øvelsestime/Enrollmentsystem/Enrollmentsystem.csproj",
+        "projectName": "Enrollmentsystem",
+        "projectPath": "/Users/peterleth/Desktop/1semester/oop/OOP/Øvelsestime/Enrollmentsystem/Enrollmentsystem.csproj",
         "packagesPath": "/Users/peterleth/.nuget/packages/",
-        "outputPath": "/Users/peterleth/Desktop/1semester/oop/OOP-assignments/Exercises/obj/",
+        "outputPath": "/Users/peterleth/Desktop/1semester/oop/OOP/Øvelsestime/Enrollmentsystem/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/peterleth/.nuget/NuGet/NuGet.Config"
